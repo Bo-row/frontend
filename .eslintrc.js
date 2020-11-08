@@ -28,6 +28,7 @@ module.exports = {
     '@typescript-eslint/no-shadow': 2,
     //ignored
     'no-shadow': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-namespace': 0,
     '@typescript-eslint/restrict-template-expressions': 0
   }
