@@ -20,16 +20,17 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier/@typescript-eslint',
+    'prettier',
     'plugin:prettier/recommended' // Make sure this is always the last configuration in the extends array.
   ],
   rules: {
     'no-eval': 2,
     '@typescript-eslint/no-shadow': 2,
+    '@typescript-eslint/no-non-null-assertion': 2,
+    '@typescript-eslint/no-unused-vars': [2, { argsIgnorePattern: '^_' }],
     //ignored
     'no-shadow': 0,
-    '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/no-namespace': 0,
-    '@typescript-eslint/restrict-template-expressions': 0
+    '@typescript-eslint/explicit-module-boundary-types': 0,
   }
 };
